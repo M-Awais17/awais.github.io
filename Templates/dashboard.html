@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio | Awais Nawaz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and Styling */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; background-color: #f4f4f9; color: #333; }
+
+        /* Main container */
+        .container { max-width: 900px; margin: 30px auto; padding: 40px; background: #fff; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); }
+
+        /* Header */
+        .header { display: flex; align-items: center; border-bottom: 2px solid #e9ecef; padding-bottom: 15px; }
+        .profile-pic { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid #007bff; margin-right: 20px; }
+        h1 { font-size: 2.5em; line-height: 1.2; color: #004085; }
+        .contact-info { font-size: 0.9em; color: #555; margin-top: 5px; }
+        
+        /* About Section */
+        .about {
+            margin: 20px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            line-height: 1.6; /* Improved line height for better readability */
+        }
+        .about p { color: #555; font-size: 1em; margin-bottom: 15px; }
+
+        /* Section */
+        .section { margin: 20px 0; padding: 25px; background: #f8f9fa; border-radius: 8px; }
+        .section h2 { color: #007bff; font-size: 1.8em; margin-bottom: 15px; }
+
+        /* Skills */
+        .skills { list-style: none; padding: 0; margin: 0; }
+        .skills li { background: #e9ecef; margin: 5px 0; padding: 8px; border-radius: 5px; color: #333; font-weight: 500; }
+
+        /* Experience & Education */
+        .experience-item, .education-item { padding: 10px 0; border-bottom: 1px solid #ddd; }
+        .experience-item:last-child, .education-item:last-child { border-bottom: none; }
+
+        /* Project */
+        .project-item {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .project-item:hover {
+            transform: scale(1.02);
+            transition: transform 0.3s;
+        }
+
+        /* Social Buttons */
+        .social-buttons { text-align: center; margin-top: 20px; }
+        .social-buttons a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            color: #fff;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .social-buttons .whatsapp { background-color: #25D366; }
+        .social-buttons .youtube { background-color: #FF0000; }
+        .social-buttons .facebook { background-color: #3b5998; }
+        .social-buttons .linkedin { background-color: #0077b5; }
+        .social-buttons a:hover { opacity: 0.8; transform: translateY(-2px); }
+    </style>
+</head>
+<body>
+    <div class="header">
+    <img src="{{ url_for('static', filename='images/Verified.jpg') }}" alt="Awais Nawaz's Profile Picture" class="profile-pic">
+    <div>
+        <!-- Additional content can go here -->
+    </div>
+</div>
+
+                <h1>Awais Nawaz</h1>
+                <p class="contact-info">Information Technologist & Full Stack Developer<br>
+                <strong>Email:</strong> mawais03415942806@gmail.com | 
+                <br> <strong>Phone:</strong> +923415942806</p>
+            </div>
+        </div>
+
+      <div class="about">
+  <h2>About Me</h2>
+  <p id="aboutText"></p>
+  <script>
+    const quoteText = `I am Awais Nawaz, an Information Technologist with over four years of experience specializing in IT infrastructure management and full stack development. 
+My journey in technology began with a deep curiosity for how systems work, leading me to gain expertise in various areas including data analysis, software development, and project management. 
+I thrive on challenges and take pride in my ability to deliver data-driven solutions that optimize system performance and enhance security. 
+My professional experience has allowed me to collaborate with diverse teams, where I've honed my skills in creating efficient processes and implementing innovative technologies. 
+Passionate about leveraging my technical skills to build meaningful applications that provide real value, I am excited to explore new opportunities that allow me to push the boundaries of technology and contribute to impactful projects.`;
+
+    let i = 0;
+    const speed = 20; // Adjust typing speed
+
+    function typeWriter() {
+      if (i < quoteText.length) {
+        document.getElementById('aboutText').textContent += quoteText.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+
+    typeWriter();
+  </script>
+</div>
+
+
+
+        <!-- Skills -->
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <ul class="skills">
+                <li>Full Stack Development (HTML, CSS, JavaScript, Python, Flask, Django)</li>
+                <li>Data Analysis (SQL, Python, Data Visualization)</li>
+                <li>Software Development (Object-Oriented Programming, Agile Methodologies)</li>
+                <li>IT Infrastructure & Network Management</li>
+                <li>Project Management (Scrum, Kanban)</li>
+                <li>Ethical Hacking & Security Audits</li>
+            </ul>
+        </div>
+
+        <!-- Experience -->
+        <div class="section">
+            <h2>Professional Experience</h2>
+            <ul class="experience">
+                <li class="experience-item">
+                    <strong>Information Technologist</strong> - The Islamia University of Bahawalpur <br>
+                    <em>2020 - Present</em>
+                    <p>Managed IT infrastructure and network solutions, optimized security measures, and led software deployment projects across multiple departments.</p>
+                </li>
+                <li class="experience-item">
+                    <strong>Full Stack Developer & Freelancer</strong> - Upwork <br>
+                    <em>2018 - Present</em>
+                    <p>Delivered full stack applications, performed data analysis, and handled client projects involving web and software development.</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Projects -->
+        <div class="section">
+            <h2>Notable Projects</h2>
+            <ul class="projects">
+                <li class="project-item">
+                    <strong>Project Management System</strong> - Developed a task tracking and reporting tool for teams, using Python and Django.
+                </li>
+                <li class="project-item">
+                    <strong>Network Health Dashboard</strong> - Created a real-time monitoring system for network performance and server health.
+                </li>
+                <li class="project-item">
+                    <strong>Data Analytics Platform</strong> - Implemented data aggregation and visualization features to support data-driven decisions.
+                </li>
+            </ul>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <h2>Education</h2>
+            <ul class="education">
+                <li class="education-item">
+                    <strong>Bachelor of Science in Information Technology</strong><br>
+                    The Islamia University of Bahawalpur
+                </li>
+                <li class="education-item">
+                    <strong>Certifications:</strong> <br>
+                    - Cisco Certified Network Associate (CCNA)<br>
+                    - Certified Ethical Hacker (CEH)
+                </li>
+            </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-buttons">
+            <h2>Connect with Me</h2>
+            <a href="https://wa.me/923415942806" class="whatsapp">WhatsApp</a>
+            <a href="https://www.youtube.com/" class="youtube">YouTube</a>
+            <a href="https://www.facebook.com/" class="facebook">Facebook</a>
+            <a href="https://www.linkedin.com/" class="linkedin">LinkedIn</a>
+        </div>
+    </div>
+</body>
+</html>
