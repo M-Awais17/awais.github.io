@@ -1,2 +1,19 @@
-# awais.github.io
-This is my personal portfolio website, built with HTML, CSS, and JavaScript. It showcases my projects, skills, and experience in web development, ethical hacking, and IT solutions. Hosted using GitHub Pages.  ✨ Features: - Responsive design for mobile and desktop - Smooth animations and clean UI - Projects, contact form, and about me section -
+# Project Name
+
+A brief description of your project.
+
+## Installation
+
+Instructions on how to install and run your project.
+
+## Usage
+
+Examples of how to use your project.
+
+## Contributing
+
+Guidelines for contributing to your project.
+
+## License
+
+Information about the project's license.
