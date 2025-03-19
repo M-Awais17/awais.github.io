@@ -131,7 +131,43 @@ def logout():
     flash('Logged out successfully.')
     return redirect(url_for('home'))
 
+@app.route('/profile', methods=['GET', 'POST'])
+def profile():
+    if 'username' not in session:
+        flash('You must be logged in to view this page.')
+        return redirect(url_for('login'))
+    
+    users = load_user_data()
+    username = session['username']
+    user_data = users.get(username)
+    
+    if request.method == 'POST':
+        # Update user data
+        first_name = request.form['name']
+        surname = request.form['surname']
+        country_code = request.form['country_code']
+        phone = request.form['phone']
+        email = request.form['email']
+        password = request.form['password']
+        
+        # Update the Excel file
+        wb = load_workbook(user_data_file)
+        ws = wb.active
+        for row in ws.iter_rows(min_row=2):
+            if row[3].value == username:
+                row[1].value = first_name
+                row[2].value = surname
+                row[4].value = country_code
+                row[5].value = phone
+                row[6].value = email
+                row[7].value = password
+                break
+        wb.save(user_data_file)
+        
+        flash('Profile updated successfully!')
+        return redirect(url_for('profile'))
+    
+    return render_template('profile.html', user_data=user_data)
+
 if __name__ == '__main__':
-     app.run(debug=True, host="0.0.0.0", port=5000, 
-        ssl_context=('/data/data/com.termux/files/home/.termux/ssl/server.crt', 
-                      '/data/data/com.termux/files/home/.termux/ssl/server.key'))
+     app.run(debug=True, host="0.0.0.0", port=5000)
