@@ -3,21 +3,20 @@
     padding: 0;
 }
 body{
-    background: rgba(64, 95, 84, 0.604);
+    background: rgba(37, 55, 49, 0.604);
 }
 .main{
     width: 100%;
-    background-color: rgb(45, 63, 42);
-    background-position: center;
-    background-position: 100%;
-    background-size: cover;
-    height: 900px;
-    width: 1250px;
-    border-radius: 100px;
-    max-width: 1300px;
-    max-height: 100%;
-    margin-top: 10px;
-    margin-left: 10px;
+    height: 1000px;
+    margin: auto;
+    background: #dadd37a8;
+    background-image: linear-gradient(rgba(9, 5, 147, 0.897), transparent);
+    
+}
+
+.main:hover{
+    background: #db3636cb;
+    background-image: linear-gradient(rgba(23, 206, 160, 0.897), transparent);
 }
 
 .img-f img{
@@ -38,15 +37,19 @@ body{
     width: 200px;
     float: left;
     height: 70px;
+    transition: 0.4s ease-in-out;
 }
 .logo{
-    color: rgb(24, 243, 104);
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 20px;
-    padding-top: 10px;
-    float: left;
-    margin-left: 50px;
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    transition: 0.4s ease-in-out;
+}
+
+.logo:hover{
+    transform: scale(1.1);
 }
 
 .menu{
@@ -57,28 +60,6 @@ body{
     
 }
 
-ul{
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 1px;
-}
-
-ul li{
-    list-style: none;
-    margin-left: 62px;
-    margin-top: 40px;
-    font-size: medium;
-}
- 
-ul li a {
-     text-decoration: none;
-     color: rgb(255, 253, 253);
-     font-family: Arial, Helvetica, sans-serif;
-     font-weight: bold;
-     transition: 0.4s ease-in-out;
-}
 
 .search{
     width: 330px;
@@ -102,7 +83,7 @@ ul li a {
 }
 
 .btn{
-    width: 30%;
+    width: 80px;
     height: 40px;
     background: #41ec16ab;
     border: 2px solid #f4450a;
@@ -154,6 +135,8 @@ ul li a {
     width: 1100px;
     background: linear-gradient(rgba(9, 5, 147, 0.897), transparent);
     border-radius: 100px;
+    position: relative;
+    margin-top: 120px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -212,6 +195,14 @@ ul li a {
 .tab-title button p{
      text-align: center;
      font-size: larger;
+}
+
+.skil-boxes ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1px;
 }
 
 .tab-links{
@@ -280,6 +271,7 @@ ul li a {
 #services{
     width: 1200px;
     height: 900px;
+    position: relative;
     margin-top: 0px;
     margin-bottom: 50px;
     background-color: #cff4eb;
@@ -587,4 +579,63 @@ textarea{
 
 .contact-right h1{
     color: #0cf524;
- }
+}
+
+
+
+@media (max-width: 768px) {
+    .main {
+        height: auto; 
+        padding: 20px; 
+    }
+
+    .navbar {
+        width: 100%; 
+        height: auto;
+        float: left; 
+    }
+
+    .img-f img {
+        height: auto; 
+        width: 100%; 
+        margin: 0; 
+    }
+
+    .search {
+        width: 100%; 
+        margin-left: 0; 
+    }
+
+    .main-text {
+        margin: 20px; 
+        font-size: 24px; 
+    }
+
+    #about, #services, .container_work {
+        width: 100%; 
+        padding: 10px; 
+    }
+
+    .row {
+        flex-direction: column; 
+    }
+
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%; 
+    }
+
+    .contact-left, .contact-right {
+        width: 100%; 
+        padding: 20px; 
+    }
+
+    #contactForm input, textarea {
+        width: 100%; 
+        margin-bottom: 10px; 
+    }
+
+    .btn, .btn1 {
+        width: 100%; 
+        margin-top: 10px; 
+    }
+}

@@ -4,30 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bar.css">
+    <link rel="stylesheet" href="css/search.css">
     <script src="js/tablink.js"></script>
+    <script src="js/search.js"></script>
 </head>
 <body>
 
 <div class="main" id="home">
+    <div class="background-image"></div>
     <div class="navbar">
         <div class="icon">
-            <h1 class="logo">UfaQ</h1>
+            <h1 class="logo"><img src="img/my-logo.png" alt=""></h1>
         </div>
 
-        <div class="menu">
+        <div class="menu-bar">
             <ul>
-                <li><a href="#home">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#services">services</a></li>
-                <li><a href="#design">design</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
+            <a href="#home" class="link">
+            <span class="link-icon"><img src="img/user.png" alt=""></span>
+              <span class="link-title">Home</span>
+            </a>
+            <a href="#about" class="link">
+              <span class="link-icon"><img src="img/id-card.png" alt=""></span>
+              <span class="link-title">About</span>
+            </a>
+            <a href="#services" class="link">
+              <span class="link-icon"><img src="img/working.png" alt=""></span>
+              <span class="link-title">Services</span>
+            </a>
+            <a href="#design" class="link">
+              <span class="link-icon"><img src="img/web-content.png" alt=""></span>
+              <span class="link-title">Work</span>
+            </a>
+            <a href="#contact" class="link">
+              <span class="link-icon"><img src="img/contact-information.png" alt=""></span>
+              <span class="link-title">Contact</span>
+            </a>
+         </ul>
         </div>
-
-        <div class="search">
-            <input class="srch" type="search" placeholder="Type to text">
-            <a href=""><button class="btn">search</button></a>
+        
+        <div class="search-panel">
+            
+            <div class="search-group">
+                <label for="search">Search:</label>
+                <input type="text" id="search" name="search" placeholder="Search here">
+                <div class="btn-box">
+                    <button class="btn-search">	
+                     <img src="img/search.png" alt="Search Icon" width="40" height="40">
+                    </button>
+                </div>
+                <div class="btn-box-x">
+                    <button class="btn-clear" id="cleare-line">
+                        <img src="img/eraser.png" alt="X Icon" width="40" height="40">
+                    </button>
+                </div>
+            </div>
         </div>
         <div class="img-f"> <img src="img/front.png" alt="img"> </div>
     </div>
@@ -190,7 +222,7 @@
             <h1>Download <br>MY CV <br>here</h1></marquee>
         </div>
         
-   <a href="img/Awais resume.pdf" class="btn1">Download now</a>
+    <a href="img/awais pro cv.pdf" class="btn1">Download now</a>
       </div>
 </div>    
 </body>
