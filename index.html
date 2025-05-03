@@ -2,14 +2,20 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">   
     <meta name="description" content="Start your development with Awais Nawaz.">
+    <meta property="og:image" content="assets/imgs/portfolio.jpg">
+    <meta property="og:title" content="Awais Nawaz | Professional Portfolio">
+    <meta property="og:description" content="Explore the professional portfolio of Awais Nawaz, showcasing expertise in web development, UI/UX design, and more.">
+    <meta property="og:url" content="https://awais.github.io/">
     <meta name="author" content="Devcrud">
     <title>Awais Nawaz | Professional Portfolio</title>
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + Awais main styles -->
-	<link rel="stylesheet" href="assets/css/Awais.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Awais main styles -->
+    <link rel="stylesheet" href="assets/css/Awais.css">
     
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -28,7 +34,7 @@
                 <h4 class="header-subtitle" >Hello, I am</h4>
                 <h1 class="header-title">Awais Nawaz</h1>
                 <h6 class="header-mono" >Pro Developer | UI & UX Designer</h6>
-                <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Print Resume</button>
+                <button class="btn btn-primary btn-rounded" onclick="window.print()"><i class="ti-printer pr-2"></i>Print Resume</button>
 
             </div>
               <div class="img-f"> <img src="assets/imgs/front.png" alt="img"> </div>
@@ -39,7 +45,7 @@
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-collapse mt-sm-20 collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <a href="#home" class="nav-link">Home</a>
@@ -934,7 +940,9 @@
         </div>
     </footer>
 
-	<!-- core  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
