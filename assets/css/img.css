@@ -42,3 +42,9 @@ body:not(:first-of-type) .img-f {
         margin-left: 1300px;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1150px) {
+    .img-f {
+       display: none;
+    }
+}
