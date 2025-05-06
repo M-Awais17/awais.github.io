@@ -42,9 +42,14 @@ body:not(:first-of-type) .img-f {
         margin-left: 1300px;
     }
 }
-
-@media (min-width: 768px) and (max-width: 1150px) {
+@media (min-width: 2561px) {
     .img-f {
-        display: none !important;
+        display: flex;
+        position: absolute;
+        height: 950px;
+        width: 500px;
+        float: right;
+        margin-top: 900px;
+        margin-left: 1300px;
     }
 }
