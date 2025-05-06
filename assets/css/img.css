@@ -26,7 +26,7 @@ body:not(:first-of-type) .img-f {
 }
 
 
-@media (max-width: 1199px) {
+@media (max-width: 1000px) {
     .img-f {
         display: none !important;
     }
