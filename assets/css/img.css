@@ -1,3 +1,12 @@
+.img-f {
+    display: flex;
+    position: absolute;
+    height: 950px;
+    width: 500px;
+    float: right;
+    margin-top: 70px;
+    left: 680px;
+}
 
 
 @media (min-width: 1200px) and (max-width: 1906px) {
