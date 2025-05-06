@@ -28,7 +28,7 @@ body:not(:first-of-type) .img-f {
 
 @media (max-width: 1199px) {
     .img-f {
-        display: none;
+        display: none !important;
     }
 }
 @media (min-width: 1907px) and (max-width: 2560px) {
@@ -45,6 +45,6 @@ body:not(:first-of-type) .img-f {
 
 @media (min-width: 768px) and (max-width: 1150px) {
     .img-f {
-       display: none;
+        display: none !important;
     }
 }
