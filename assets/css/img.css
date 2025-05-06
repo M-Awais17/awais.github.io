@@ -12,7 +12,7 @@
 }
 
 body:not(:first-of-type) .img-f {
-    display: none; 
+    display: none !important; 
 }
 
 @media (min-width: 1907px) {
